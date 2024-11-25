@@ -1,7 +1,5 @@
 # InfoSogCLR PyTorch Implementation
 
-In this repo, we show how to train a self-supervised model by using Global Contrastive Loss (GCL) on a widely used bimodal image-text dataset [CC3M](https://ai.google.com/research/ConceptualCaptions/download).
-
 ### Environment
 
 Setting up a new virtual environment with Conda:
@@ -88,6 +86,3 @@ pip install -r requirements_colab.txt
         --epochs ${epochs} \
         --evaluate --checkpoint ./output/${ita_type}_cc3m_g0.8_e30/checkpoint_30.pth
     ```
-
-}
-```
