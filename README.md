@@ -1,10 +1,6 @@
-# iSogCLR PyTorch Implementation
+# InfoSogCLR PyTorch Implementation
 
 In this repo, we show how to train a self-supervised model by using Global Contrastive Loss (GCL) on a widely used bimodal image-text dataset [CC3M](https://ai.google.com/research/ConceptualCaptions/download).
-
-## Getting Started
-
-Try in Colab: [https://colab.research.google.com/drive/1FTF-cTcW11Gyrwu8uhTZOXgLsjp49Z9W?usp=sharing](https://colab.research.google.com/drive/1FTF-cTcW11Gyrwu8uhTZOXgLsjp49Z9W?usp=sharing)
 
 ### Environment
 
@@ -13,7 +9,7 @@ Setting up a new virtual environment with Conda:
 env_name='csce689_proj'
 conda create -n "$env_name" python=3.10
 conda activate "$env_name"
-pip install -r requirements.txt
+pip install -r requirements_colab.txt
 ````
 
 ### Training and Evaluation
@@ -93,15 +89,5 @@ pip install -r requirements.txt
         --evaluate --checkpoint ./output/${ita_type}_cc3m_g0.8_e30/checkpoint_30.pth
     ```
 
-## Reference
-If you find this tutorial helpful, please cite:
-```
-@inproceedings{qiu2023not,
-  title={Not All Semantics are Created Equal: Contrastive Self-supervised Learning with Automatic Temperature Individualization},
-  author={Zi-Hao Qiu, Quanqi Hu, Zhuoning Yuan, Denny Zhou, Lijun Zhang, and Tianbao Yang},
-  booktitle={International Conference on Machine Learning},
-  pages={TBD},
-  year={2023},
-  organization={PMLR}
 }
 ```
